@@ -1,0 +1,51 @@
+/*------------
+style elements
+------------*/
+
+strong {
+	/* font-weight: bolder; */
+	font-size: 75px;
+}
+
+hr {
+	border: 3px solid blue;
+	background-color: yellow;
+}
+
+img {
+	height: 250px;
+	width: 250px;
+	padding: 5px;
+	border: 2px solid red;
+	margin: 2px;
+	background-color: purple;
+}
+
+
+/*------------
+style classes
+------------*/
+
+/* game banner */
+.banner {
+	background-color: aqua;
+	color: red;
+	text-align: center;
+	font-size: 36pt;
+	font-family: 'fantasy', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* for spacing using characters */
+.trans {
+	color: transparent;
+}
+
+/* .center {
+	padding: %;
+} */
+
+.images {
+	display: block;
+	background-color: yellow;
+	float: right;
+}

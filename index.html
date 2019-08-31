@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title> Crystal Game</title>
+        <!-- set to make viewable on all devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Meyer css reset -->
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <!-- Latest compiled and minified CSS 4.0-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <!-- local style sheet -->
+        <link rel="stylesheet" href="assets/css/style.css">
+         <!-- jQuery library -->
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+         <!-- Latest compiled JavaScript -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+         <!-- link to local stylesheet  -->
+         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    </head>
+    <body>
+            <div class="container-fluid">
+                    <!-- set up grid layout -->
+        
+                    <!-- game page name; row #1 -->
+                    <div class="row banner">
+                        <div class="col-12">
+                            <strong style="border-collapse: collapse;">
+                                Crystals<span class="trans">s</span> Collector<span class="trans">s</span> Game
+                            </strong>
+                            <hr>
+                        </div>
+                    </div>
+                    <!-- game page name; row #2 -->
+                    <div class="row ">
+                        <div class="col-sm-3 images">
+                            <img src="assets/images/blue-crystal.jpg" alt="blue-crystal">
+                        </div>
+                        <div class="col-sm-3 images">
+                            <img src="assets/images/yellow-crystal.jpg" alt="yellow-crystal">
+                        </div>
+                        <div class="col-sm-3 images">
+                            <img src="assets/images/purple-crystal.jpg" alt="purple-crystal">
+                        </div>
+                        <div class="col-sm-3 images">
+                            <img src="assets/images/red-crystal.jpg" alt="red-crystal">
+                        </div>
+                    </div>
+                    <!-- row #3 -->
+                    <div class="row white-text">
+                        <!-- brief instruction description -->
+                        <div class="col-4 stats">
+                            <br>
+                            <h1>Press Any Key to Start</h1>
+                            <br>
+                            <h1>Instructions</h1>
+                        </div>
+                        <!-- area for blanks -->
+                        <div class="col-4 array" style="height: 20%">
+                            <br>
+                            <h1>Target Number: <span id="lrtIn"></span></h1>
+                            <br>
+                            <h1>Your Current Total: <span id="guessRem"></span></h1>
+                        </div>
+                        <!-- headings related to guesses -->
+                        <div class="col-4 guesses">
+                            <br>
+                            <h1>Wins: <span id="winCnt"></span></h1>
+                            <br>
+                            <h1>Losses: <span id="lossCnt"></span></h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                            <div class="col-12">
+                               <p>xxxxxxxx xxxxxxxx xxxxx</p>>
+                            </div>
+                        </div>
+                    <!-- row #4 -->
+                    <!-- <div class="row white-text"> -->
+                        <!-- headings related to game stats -->
+                        <!-- <div class="col-3 stats">
+                            <br>
+                            <h1>Win Count: <span id="winCnt"></span></h1>
+                            <br>
+                            <h1>Loss Count: <span id="lossCnt"></span></h1>
+                        </div>
+                        <div class="col-6 array">
+                        </div>
+                        <div class="col-3 guesses">
+                        </div>
+                    </div> -->
+                    
+                    <!-- carousel of animal photos -->
+                    <!-- <div id="demo" class="carousel slide" data-ride="carousel"> -->
+                        
+                        <!-- The slideshow -->
+                        <!-- <div class="row">
+                            <div class="col-4">
+                                
+                            </div>
+                            <div class="col-4">
+                                
+                                <div class="carousel-inner"> -->
+                                    <!-- animal photos listing -->
+                                    <!-- <div class="carousel-item active">
+                                        <img src="assets/images/bear_1.jpg" alt="bear_1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/cat_1.jpeg" alt="cat_1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/deer_1.jpeg" alt="deer_1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/dog_1.jpeg" alt="dog_1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/fox_1.jpeg" alt="fox_1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/horse_1.jpeg" alt="horse_1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/Lion_1.jpeg" alt="Lion_1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/pig_1.jpeg" alt="pig_1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/wolf_2.jpeg" alt="wolf_1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   -->
+                </div>
+                <!-- script placed here after grid is in place -->
+                <script src="assets/javascript/game.js"></script>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script src="" async defer></script>
+    </body>
+</html>
