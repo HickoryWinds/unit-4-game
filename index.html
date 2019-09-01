@@ -31,18 +31,22 @@
                         </div>
                     </div>
                     <!-- game page name; row #2 -->
-                    <div class="row ">
+                    <div class="row">
                         <div class="col-sm-3 images">
-                            <img src="assets/images/blue-crystal.jpg" alt="blue-crystal">
+                            <!-- <img id="blueCrystal" src="assets/images/blue-crystal.jpg" alt="blue-crystal"> -->
+                            <button id="blueCrystal" type="button" class="btn btn-danger crystal" style="background-image: url(assets/images/blue-crystal.jpg);"></button>
                         </div>
                         <div class="col-sm-3 images">
-                            <img src="assets/images/yellow-crystal.jpg" alt="yellow-crystal">
+                            <!-- <img id="yellowCrystal" src="assets/images/yellow-crystal.jpg" alt="yellow-crystal"> -->
+                            <button id="yellowCrystal" type="button" class="btn btn-danger crystal" style="background-image: url(assets/images/yellow-crystal.jpg);"></button>
                         </div>
                         <div class="col-sm-3 images">
-                            <img src="assets/images/purple-crystal.jpg" alt="purple-crystal">
+                            <!-- <img id="purpleCrystal" src="assets/images/purple-crystal.jpg" alt="purple-crystal"> -->
+                            <button id="purpleCrystal" type="button" class="btn btn-danger crystal" style="background-image: url(assets/images/purple-crystal.jpg);"></button>
                         </div>
                         <div class="col-sm-3 images">
-                            <img src="assets/images/red-crystal.jpg" alt="red-crystal">
+                            <!-- <img id="redCrystal" src="assets/images/red-crystal.jpg" alt="red-crystal"> -->
+                            <button id="redCrystal" type="button" class="btn btn-danger crystal" style="background-image: url(assets/images/red-crystal.jpg);"></button>
                         </div>
                     </div>
                     <!-- row #3 -->
@@ -50,32 +54,33 @@
                         <!-- brief instruction description -->
                         <div class="col-4 stats">
                             <br>
-                            <h1>Press Any Key to Start</h1>
+                            <button id="startButton" type="button" class="btn btn-success btn-lg">Press to Play</button>
+                            <p><span id="message"></span></p>
                             <br>
                             <h1>Instructions</h1>
                         </div>
                         <!-- area for blanks -->
-                        <div class="col-4 array" style="height: 20%">
+                        <div class="col-4 array">
                             <br>
-                            <h1>Target Number: <span id="lrtIn"></span></h1>
+                            <h1>Target Number: <span id="target"></span></h1>
                             <br>
-                            <h1>Your Current Total: <span id="guessRem"></span></h1>
+                            <h1>Your Current Total: <span id="score"></span></h1>
                         </div>
                         <!-- headings related to guesses -->
                         <div class="col-4 guesses">
                             <br>
-                            <h1>Wins: <span id="winCnt"></span></h1>
+                            <h1>Wins: <span id="winCount"></span></h1>
                             <br>
-                            <h1>Losses: <span id="lossCnt"></span></h1>
+                            <h1>Losses: <span id="lossCount"></span></h1>
                         </div>
                     </div>
                     <div class="row">
                             <div class="col-12">
-                               <p>xxxxxxxx xxxxxxxx xxxxx</p>>
+                               <p>xxxxxxxx xxxxxxxx xxxxx</p>
                             </div>
                         </div>
                     
-                    </div> -->
+                    </div>
                     
                     <!-- carousel of animal photos -->
                     <!-- <div id="demo" class="carousel slide" data-ride="carousel"> -->
@@ -102,8 +107,5 @@
                 </div>
                 <!-- script placed here after grid is in place -->
                 <script src="assets/javascript/game.js"></script>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
     </body>
 </html>

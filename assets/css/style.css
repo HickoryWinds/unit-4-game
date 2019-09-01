@@ -2,6 +2,10 @@
 style elements
 ------------*/
 
+body {
+	background-image: url(gravel.png);
+}
+
 strong {
 	/* font-weight: bolder; */
 	font-size: 75px;
@@ -12,15 +16,21 @@ hr {
 	background-color: yellow;
 }
 
-img {
+/* img {
 	height: 250px;
 	width: 250px;
 	padding: 5px;
 	border: 2px solid red;
 	margin: 2px;
 	background-color: purple;
-}
+} */
 
+/* styling for button images */
+.crystal {
+	height: 250px;
+	width: 250px;
+	margin: 20px;
+}
 
 /*------------
 style classes
