@@ -7,21 +7,14 @@ body {
 }
 
 strong {
-	/* font-weight: bolder; */
-	font-size: 75px;
+	font-size: 60px;
 }
 
 hr {
 	border: 3px solid blue;
-	background-color: yellow;
 }
 
 /* img {
-	height: 250px;
-	width: 250px;
-	padding: 5px;
-	border: 2px solid red;
-	margin: 2px;
 	background-color: purple;
 } */
 
@@ -50,12 +43,12 @@ style classes
 	color: transparent;
 }
 
-/* .center {
-	padding: %;
-} */
-
+/* background color for div containing images */
 .images {
-	display: block;
 	background-color: yellow;
-	float: right;
+}
+
+/* style ids */
+#message {
+	font-size: 18pt;
 }
