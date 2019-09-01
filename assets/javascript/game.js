@@ -7,7 +7,7 @@
 var playGame = false;
 
 // targetV is target value that user attempts to match
-var targetV = 55;
+var targetV = "";
 $("#target").text(targetV);
 
 // runningTotal keeps track of sum of players guesses
@@ -39,8 +39,8 @@ $("#yellowCrystal").click(codeYellow);
 $("#purpleCrystal").click(codePurple);
 $("#redCrystal").click(codeRed);
 
-// display player's current guess total
-$("#score").text(runningTotal);
+// messages to player
+$("#message").text("Press Button to Start");
 
 // ---------------------
 // function definitions
@@ -48,12 +48,15 @@ $("#score").text(runningTotal);
 // initializeGame call targetValue to set target
 function intializeGame () {
     targetV = 0;
+    runningTotal = 0;
     while (targetV < 19) {
         targetV =  Math.floor(Math.random() * 120) + 1;
     }
     // display target value and message to player
     $("#target").text(targetV);
     $("#message").text("Good Luck!");
+    $("#score").text(runningTotal);
+
     // set unique random values for each crystal image
     blueValue = Math.floor(Math.random() * 14) + 1;
     // blueValue = 2;
@@ -91,6 +94,7 @@ function intializeGame () {
     console.log("------------");
     // activate buttons
     playGame = true;
+    console.log(playGame);
 }
 
 
@@ -151,25 +155,23 @@ function addPoints(color) {
         break;
         }
         $("#score").text(runningTotal);
+        winLoss(runningTotal);
         }
                 
 // winLoss determines if player's guess matches or exceeds target
-// displays wins, losses, and message
+// displays wins, losses, and message; resets playGame condition
 function winLoss(n) {
     console.log("n is " + n);
     if (n === targetV) {
         wins++;
         $("#winCount").text(wins);
         $("#message").text("You Win! Play Again?");
+        playGame = false;
     } else if (n > targetV) {
-        losses += 5;
+        losses++;
         $("#lossCount").text(losses);
         $("#message").text("You Lose. Play Again?");
+        playGame = false;
     } 
 }
-
-var checkValue = 200;
-winLoss(checkValue);
-
-                
                 
