@@ -2,6 +2,10 @@
 // set global variables
 //-----------------------
 
+// playGame is set to true when game initialzed; set to false
+// set to false to keep player from adding points until game starts
+var playGame = false;
+
 // targetV is target value that user attempts to match
 var targetV = "";
 $("#target").text(targetV);
@@ -55,38 +59,82 @@ function intializeGame () {
 
     // set unique random values for each crystal image
     blueValue = Math.floor(Math.random() * 12) + 1;
-
+    // blueValue = 2;
     yellowValue = Math.floor(Math.random() * 12) + 1;
+    // yellowValue = 2;
     while (yellowValue === blueValue) {
-        yellowValue = Math.floor(Math.random() * 12) + 1;
+        for (var i = 0; i < 2; i++) {
+            yellowValue = Math.floor(Math.random() * 12) + 1;
+            console.log(yellowValue);
+            console.log("---");
+        }
     }
-
     purpleValue = Math.floor(Math.random() * 12) + 1;
+    // purpleValue = yellowValue;
     while (purpleValue === yellowValue || purpleValue === blueValue) {
-        purpleValue = Math.floor(Math.random() * 12) + 1;
+        for (var j = 0; j < 2; j++) {
+            purpleValue = Math.floor(Math.random() * 12) + 1;
+            console.log(purpleValue);
+            console.log("------");
+        }
     }
-
     redValue =  Math.floor(Math.random() * 12) + 1;
+    // redValue =  purpleValue;
     while (redValue === purpleValue || redValue === yellowValue || redValue === blueValue) {
-        redValue = Math.floor(Math.random() * 12) + 1;
+        for (var k = 0; k < 2; k++) {
+            redValue = Math.floor(Math.random() * 12) + 1;
+            console.log(redValue);
+            console.log("---------");
+        }
     }
-    
+    console.log(blueValue);
+    console.log(yellowValue);
+    console.log(purpleValue);
+    console.log(redValue);
+    console.log("------------");
+    // activate buttons
+    playGame = true;
+    console.log(playGame);
 }
+
 
 // code"Color" set case variable for addPoints and calls it
 function codeBlue() {
-    addPoints("blue");
+    if (playGame === true) {
+        var color = "blue"
+        addPoints(color);
+    } else {
+        $("#message").text("**Must Start Game First**");
+    }
 }
 
 function codeYellow() {
-    addPoints("yellow");
+    if (playGame === true) {
+        var color = "yellow"
+        addPoints(color);
+    } else {
+        $("#message").text("**Must Start Game First**");
+    }
 }
 
 function codePurple() {
-    addPoints("purple");
+    if (playGame === true) {
+        var color = "purple"
+        addPoints(color);
+    } else {
+        $("#message").text("**Must Start Game First**");
+    }
+
 }
 function codeRed() {
-    addPoints("red");
+    if (playGame === true) {
+        var color = "red"
+        addPoints(color);
+    } else {
+        $("#message").text("**Must Start Game First**");
+    }
+
+
 }
 // ------------------------------------------------------
 
@@ -111,21 +159,19 @@ function addPoints(color) {
         }
                 
 // winLoss determines if player's guess matches or exceeds target
-// displays wins, losses, and message
+// displays wins, losses, and message; resets playGame condition
 function winLoss(n) {
+    console.log("n is " + n);
     if (n === targetV) {
         wins++;
         $("#winCount").text(wins);
-        $("#message").text("You Win!");
-        setTimeout(intializeGame, 2000);
+        $("#message").text("You Win! Play Again?");
+        playGame = false;
     } else if (n > targetV) {
         losses++;
         $("#lossCount").text(losses);
-        $("#message").text("You Lose.");
-        setTimeout(intializeGame, 2000);
+        $("#message").text("You Lose. Play Again?");
+        playGame = false;
     } 
 }
-
-// starts game the first time
-intializeGame();
                 

@@ -6,16 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Meyer css reset -->
         <link rel="stylesheet" href="assets/css/reset.css">
-        <!-- local style sheet -->
-        <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
-        <!-- jQuery library -->
-        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
-        <!-- Latest compiled JavaScript -->
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> -->
-        <!-- Latest compiled and minified CSS 4.0-->
-        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
-        <!-- link to local stylesheet  -->
-         <!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css"> -->
          <!-- Latest compiled and minified CSS 4.0-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <!-- jQuery library -->
@@ -43,39 +33,34 @@
                     <!-- game page name; row #2 -->
                     <div class="row">
                         <div class="col-sm-3 images">
-                            <!-- <img id="blueCrystal" src="assets/images/blue-crystal.jpg" alt="blue-crystal"> -->
                             <button id="blueCrystal" type="button" class="btn btn-danger crystal" style="background-image: url(assets/images/blue-crystal.jpg);"></button>
                         </div>
                         <div class="col-sm-3 images">
-                            <!-- <img id="yellowCrystal" src="assets/images/yellow-crystal.jpg" alt="yellow-crystal"> -->
                             <button id="yellowCrystal" type="button" class="btn btn-danger crystal" style="background-image: url(assets/images/yellow-crystal.jpg);"></button>
                         </div>
                         <div class="col-sm-3 images">
-                            <!-- <img id="purpleCrystal" src="assets/images/purple-crystal.jpg" alt="purple-crystal"> -->
                             <button id="purpleCrystal" type="button" class="btn btn-danger crystal" style="background-image: url(assets/images/purple-crystal.jpg);"></button>
                         </div>
                         <div class="col-sm-3 images">
-                            <!-- <img id="redCrystal" src="assets/images/red-crystal.jpg" alt="red-crystal"> -->
                             <button id="redCrystal" type="button" class="btn btn-danger crystal" style="background-image: url(assets/images/red-crystal.jpg);"></button>
                         </div>
                     </div>
                     <!-- row #3 -->
                     <div class="row white-text">
-                        <!-- brief instruction description -->
                         <div class="col-4 stats">
                             <br>
-                            <button id="startButton" type="button" class="btn btn-success btn-lg">Press to Play</button>
+                            <!-- messages to the player-->
                             <p><span id="message"></span></p>
                         </div>
-                        <!-- area for blanks -->
-                        <div class="col-4 array">
+                        <!-- show target value and for player's guesses -->
+                        <div class="col-4">
                             <br>
                             <h2>Target Number: <span id="target"></span></h2>
                             <br>
                             <h2>Your Guess: <span id="score"></span></h2>
                         </div>
-                        <!-- headings related to guesses -->
-                        <div class="col-4 guesses">
+                        <!-- display player's wins and losses -->
+                        <div class="col-4">
                             <br>
                             <h2>Wins: <span id="winCount"></span></h2>
                             <br>
@@ -87,55 +72,35 @@
                             <h1 class="trans">spacer</h1>
                         </div>
                     </div>
-                    
-                    
-                     <!-- carousel of animal photos -->
+                     <!-- carousel of instructions -->
             <div id="demo" class="carousel slide" data-ride="carousel">
                 
-                <!-- The slideshow -->
+                <!-- slideshow -->
                 <div class="row">
                     <div class="col-4">
                         
                     </div>
                     <div class="col-4">
                         
+                        <!-- rotating instructions -->
                         <div class="carousel-inner">
-                            <!-- animal photos listing -->
                             <div class="carousel-item active">
-                                <h1>Instructions 1</h1>
-                                <!-- <img src="assets/images/bear_1.jpg" alt="bear_1"> -->
+                                <h3>Clicking on the crystal image will increase Your Guess.</h3>
                             </div>
                             <div class="carousel-item">
-                                    <h1>Instructions 2</h1>
-                                <!-- <img src="assets/images/cat_1.jpeg" alt="cat_1"> -->
+                                <h3>If Your Guess matches the Target Value, you win.</h3>
                             </div>
                             <div class="carousel-item">
-                                    <h1>Instructions 3</h1>
-                                <!-- <img src="assets/images/deer_1.jpeg" alt="deer_1"> -->
+                                <h3>If Your Guess exceeds the Target Value, you lose.</h3>
                             </div>
                             <div class="carousel-item">
-                                    <h1>Instructions 4</h1>
-                                <!-- <img src="assets/images/dog_1.jpeg" alt="dog_1"> -->
+                                <h3>Another round of the game starts automatically after a win or loss.</h3>
                             </div>
                             <div class="carousel-item">
-                                    <h1>Instructions 5</h1>
-                                <!-- <img src="assets/images/fox_1.jpeg" alt="fox_1"> -->
+                                <h3>The amount added to Your Guess by clicking on an image changes with each round.</h3>
                             </div>
                             <div class="carousel-item">
-                                    <h1>Instructions 6</h1>
-                                <!-- <img src="assets/images/horse_1.jpeg" alt="horse_1"> -->
-                            </div>
-                            <div class="carousel-item">
-                                    <h1>Instructions 7</h1>
-                                <!-- <img src="assets/images/Lion_1.jpeg" alt="Lion_1"> -->
-                            </div>
-                            <div class="carousel-item">
-                                    <h1>Instructions 8</h1>
-                                <!-- <img src="assets/images/pig_1.jpeg" alt="pig_1"> -->
-                            </div>
-                            <div class="carousel-item">
-                                    <h1>Instructions 9</h1>
-                                <!-- <img src="assets/images/wolf_2.jpeg" alt="wolf_1"> -->
+                                <h3>Can you harness the Power of the Crystals?</h3>
                             </div>
                         </div>
                     </div>
