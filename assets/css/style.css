@@ -14,17 +14,19 @@ hr {
 	border: 3px solid blue;
 }
 
+/*------------
+style classes
+------------*/
+
 /* styling for button images */
 .crystal {
 	height: 250px;
 	width: 250px;
-	margin: 20px;
+	margin: 0 auto;
+	/* padding-top: 20px; */
 	border-collapse: collapse;
+	display: block;
 }
-
-/*------------
-style classes
-------------*/
 
 /* game banner */
 .banner {
@@ -43,6 +45,12 @@ style classes
 /* background color for div containing images */
 .images {
 	background-color: yellow;
+	padding: 20px;
+}
+
+.orchid {
+	background-color: orchid;
+	border-collapse: collapse;
 }
 
 /* style ids */

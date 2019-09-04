@@ -50,7 +50,7 @@ function intializeGame () {
     }
     // display target value and message to player
     $("#target").text(targetV);
-    $("#message").text("Good Luck!");
+    $("#message").text("Select an Image");
     $("#score").text(runningTotal);
 
     // set unique random values for each crystal image
@@ -123,7 +123,9 @@ function winLoss(n) {
         $("#lossCount").text(losses);
         $("#message").text("You Lose.");
         setTimeout(intializeGame, 2000);
-    } 
+    } else {
+        $("#message").text("Good Luck");
+    }
 }
 
 // starts game the first time
